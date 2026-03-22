@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# TP API React - Comparaison fetch() vs Axios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Description du projet
 
-## Available Scripts
+Ce projet a été réalisé dans le cadre d'un Travail Pratique visant à comprendre et implémenter les requêtes HTTP dans une application React. L'objectif est de comparer deux méthodes de récupération de données :
 
-In the project directory, you can run:
+- **fetch()** : méthode native du navigateur
+- **Axios** : bibliothèque externe simplifiant les requêtes HTTP
 
-### `npm start`
+L'application affiche des données personnalisées avec des contenus en français et des noms marocains.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 👩‍💻 Auteur
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Malak Nait Haddou**
 
-### `npm test`
+## 📸 Captures d'écran
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Vue d'ensemble de l'application
+<img width="1919" height="1075" alt="Capture d&#39;écran 2026-03-22 144617" src="https://github.com/user-attachments/assets/1f0afae6-9654-4e48-8d27-5617b6ed6605" />
 
-### `npm run build`
+### Section Fetch - Articles marocains
+<img width="1920" height="1080" alt="Capture d&#39;écran 2026-03-22 144630" src="https://github.com/user-attachments/assets/4f17df15-9c53-458e-8ff3-76ae2b6791a1" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*Affichage des articles avec des thèmes marocains en français*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Section Axios - Utilisateurs marocains
+<img width="1920" height="1080" alt="Capture d&#39;écran 2026-03-22 144641" src="https://github.com/user-attachments/assets/40fa1e11-19c6-4d77-b69b-78874dd154b0" />
+<img width="1919" height="467" alt="Capture d&#39;écran 2026-03-22 144655" src="https://github.com/user-attachments/assets/9f93f726-17d2-4faf-9da4-84b206ace9cb" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*Carnet d'utilisateurs avec noms marocains authentiques*
+## 🎯 Objectifs pédagogiques
 
-### `npm run eject`
+- Comprendre la différence entre fetch() et Axios
+- Charger des données depuis une API
+- Afficher des listes dynamiques dans React
+- Gérer les états de chargement et les erreurs
+- Structurer proprement son code React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Technologies utilisées
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React 18** - Bibliothèque JavaScript pour l'interface utilisateur
+- **Axios** - Client HTTP pour les requêtes API
+- **JSONPlaceholder** - API de test gratuite
+- **CSS3** - Styles personnalisés
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Installation et configuration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prérequis
 
-## Learn More
+- Node.js (version 14 ou supérieure)
+- npm (gestionnaire de paquets)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📁 Structure du projet
+text
+tp-api/
+├── src/
+│   ├── FetchData.js          # Composant avec fetch()
+│   ├── AxiosData.js          # Composant avec Axios
+│   ├── App.js                # Composant principal
+│   ├── App.css               # Styles CSS
+│   └── index.js              # Point d'entrée
+├── package.json
+└── README.md
+🔧 Fonctionnalités
+Composant FetchData (fetch())
+Récupération des articles depuis l'API JSONPlaceholder
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Transformation des données en français avec des sujets marocains
 
-### Code Splitting
+Gestion de l'état de chargement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Gestion des erreurs
 
-### Analyzing the Bundle Size
+Affichage des titres et contenus formatés
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Composant AxiosData (Axios)
+Récupération des utilisateurs via Axios
 
-### Making a Progressive Web App
+Personnalisation avec des noms marocains authentiques
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Emails adaptés avec domaine .ma
 
-### Advanced Configuration
+Noms d'entreprises marocaines
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Gestion des états de chargement et d'erreur
 
-### Deployment
+Composant App
+Organisation de l'interface utilisateur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Présentation des deux composants côte à côte
 
-### `npm run build` fails to minify
+Mise en page responsive
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🎨 Aperçu des données
+Articles affichés (Fetch)
+Les secrets de la cuisine marocaine révélés par Fatima Zahra
+
+Casablanca : La ville qui ne dort jamais - Reportage de Yassine Benjelloun
+
+Comment réussir son tajine comme une véritable marocaine
+
+L'avenir du tourisme au Maroc selon Karim Tazi
+
+Les traditions ancestrales marocaines préservées par Aïcha El Mansouri
+
+Utilisateurs marocains (Axios)
+
+1.Fatima Zahra Benjelloun - fz.benjelloun@example.ma - Groupe Benjelloun & Fils
+
+2.Yassine El Fassi - y.el fassi@example.ma - Holding El Fassi
+
+3.Khadija Amrani - k.amrani@example.ma - Amrani Industries
+
+4.Mohammed Tazi - m.tazi@example.ma - Tazi Corporation
+
+5.Nadia El Mansouri - n.elm ansouri@example.ma - Mansouri Consulting
+
+📊 Comparaison fetch() vs Axios
+Caractéristique	fetch()	Axios
+Installation	Intégré (pas besoin d'installer)	Nécessite npm install axios
+Syntaxe	Plus verbeuse	Plus concise et intuitive
+Gestion des erreurs	Nécessite vérification manuelle (response.ok)	Interception automatique
+Transformation des données	response.json()	Accès direct via response.data
+Compatibilité	Native	Fonctionne sur tous les navigateurs
+Intercepteurs	Non supporté	Supporté
+🚀 Gestion des états
+L'application gère trois états pour chaque requête :
+
+Chargement : Affichage d'un message "Chargement..."
+
+Succès : Affichage des données récupérées
+
+Erreur : Affichage d'un message d'erreur personnalisé
+
+💡 Points d'apprentissage clés
+Utilisation de useState pour gérer les états
+
+Utilisation de useEffect pour les effets de bord
+
+Gestion des promesses avec async/await
+
+Try/catch pour la gestion des erreurs
+
+Structure conditionnelle pour les états de chargement/erreur
+
+🎯 Améliorations possibles
+Ajout de pagination pour afficher plus d'articles
+
+Formulaire pour ajouter/modifier des données
+
+Utilisation d'intercepteurs Axios pour les requêtes
+
+Mise en cache des données
+
+Tests unitaires avec Jest
+
+Utilisation de PropTypes pour la validation des props
+
+📚 Ressources utiles
+Documentation React
+
+Documentation fetch()
+
+Documentation Axios
+
+JSONPlaceholder API
+
+📝 Licence
+Ce projet est réalisé dans un cadre pédagogique.
+
+Malak Nait Haddou - 2026
